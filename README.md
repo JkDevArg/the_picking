@@ -1,3 +1,3 @@
 # the_picking
 
-is not ha ethical :) ty chat gpt-4
+is not a ethical :) ty chat gpt-4
