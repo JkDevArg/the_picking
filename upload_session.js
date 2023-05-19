@@ -7,9 +7,7 @@ script.src = 'https://static.filestackapi.com/filestack-js/3.x.x/filestack.min.j
 script.onload = function() {
   var client = filestack.init('AHaSBB7sZSe6Qg8OeRRp5z');
 
-  var fileName = 'session_' + Date.now() + '.txt';
-
-  client.upload(blob, { filename: fileName })
+  client.upload(blob)
     .then(response => {
       var fileUrl = response.url;
       console.log('Archivo subido con éxito:', fileUrl);
