@@ -7,10 +7,12 @@ script.src = 'https://static.filestackapi.com/filestack-js/3.x.x/filestack.min.j
 script.onload = function() {
   var client = filestack.init('AHaSBB7sZSe6Qg8OeRRp5z');
 
-  client.upload(blob)
+  var fileName = 'session_' + Date.now() + '.txt';
+
+  client.upload(blob, { filename: fileName })
     .then(response => {
       var fileUrl = response.url;
-      console.log('File Upload Ok:', fileUrl);
+      console.log('File Upload:', fileUrl);
     })
     .catch(error => {
       console.error('Error:', error);
