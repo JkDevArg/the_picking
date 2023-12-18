@@ -6,7 +6,7 @@ var script = document.createElement('script');
 script.src = 'https://static.filestackapi.com/filestack-js/3.x.x/filestack.min.js';
 script.setAttribute('crossorigin', 'anonymous');
 script.onload = function() {
-  var client = filestack.init('AHaSBB7sZSe6Qg8OeRRp5z');
+  var client = filestack.init('AbCvtsTPTkKCbD6Xa69Esz');
 
   client.upload(blob)
     .then(response => {
